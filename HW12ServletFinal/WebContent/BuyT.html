@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1> Airline Tickets</h1>
+
+<h3> Buy a new Ticket:</h3>       
+<hr>
+	<form action="order" method="Post">                                    
+		 Name:<br> <input type="text" name="name">  
+		<br> <br>
+		 Flight Number:<br> <input type="number" name="flightNumber">
+		<br> <br>
+		 From:<br> <input type="text" name="source">
+		<br> <br>
+		 To:<br> <input type="text" name="destination">
+		<br> <br>
+		 Depart:<br> <input type="text" name="flightDate">
+		 <br><br>
+		 <input   style="height:25px; width:90px" type="submit" value="Buy">
+	</form>
+	
+<h3> See, cancel or change your ordered ticket:</h3>       
+<hr>
+	<form   name="form2" action="" method="Post">
+		 
+		 Ticket ID:<br> <input type="number" name="id">  
+		<br> <br>
+<input type="submit" value="Show" style="height:25px; width:90px" onclick="form2.action='see';">
+<input type="submit" value="Cancel" style="height:25px; width:90px" onclick="form2.action='del';">
+<input type="button" style="height:25px; width:90px" onclick="location.href='Change.html';" value="Change" />
+	</form>
+	<br><br>
+
+</body>
+</body>
+</html>
